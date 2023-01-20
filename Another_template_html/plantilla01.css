@@ -1,0 +1,36 @@
+/* seleccionador o selectores */
+/* con %20 podemos reemplazar el espacio nen blanco de un archivo html */
+body {
+background-color: blue !important;  /*forza a que se muestre, pero es una mala practica*/
+}
+
+body {
+    background-color:green; /*toma este ultimo body, pero como el anterior tiene !important, entonces prevalece important*/
+}
+p {
+    color: white;
+}
+
+tag {
+    color: red;
+}
+
+#parrafo3 {
+    color: yellow; /* con el id me ayudo para elegir el elemento al cual le quiero especificar alguna caracteristica como color */
+}
+
+.purple {
+    color: purple; /* con el .purple me llama la caracteristica ayudo que tiene la clase purple */
+}
+
+.big {
+    font-size: 30px; /* tamaño del texto */
+}
+
+p b {
+    color: red; /* se va metiendo en el tag llamado p y luego en el b de negrita, y lo vuelve color rojo lo que este dentro de <b> */ 
+}
+
+.green b {
+    color: green; /* se va metiendo en el tag llamado p y luego en el b de negrita, y lo vuelve color rojo lo que este dentro de <b> */ 
+}

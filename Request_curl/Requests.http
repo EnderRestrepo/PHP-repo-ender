@@ -1,0 +1,49 @@
+
+
+@baseuri = https://jsonplaceholder.typicode.com
+
+### By this way I can do global petition
+GET {{baseuri}}/posts
+
+### By this way I can do individual petition
+https://jsonplaceholder.typicode.com/posts/1
+
+### By this way I can do individual petition
+GET https://jsonplaceholder.typicode.com/posts/2
+
+### Doing a post request
+POST https://jsonplaceholder.typicode.com/posts
+
+Content-Type: application/json
+# this Down is a request body
+{
+    "title": "learnig vscode",
+    // this is the body
+    "body": "It is interesting"
+}
+
+### Deleting somethings
+DELETE https://jsonplaceholder.typicode.com/posts/1
+
+### Updating a publication
+PUT https://jsonplaceholder.typicode.com/posts/1
+
+### Only obteined the head
+HEAD https://jsonplaceholder.typicode.com/posts/1
+
+### this function let know which methods are allowed
+OPTIONS https://jsonplaceholder.typicode.com/posts/1
+
+### 
+TRACE https://jsonplaceholder.typicode.com/posts/1
+
+Content-Type: application/json
+{
+    "title": "this is the publication #1",
+    "body": "This contain was updated"
+}
+###
+curl -vso /dev/null/ www.vulongtran.com
+
+###
+GET https://regres.in/api/users
